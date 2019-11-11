@@ -30,6 +30,7 @@ workflows:
   release-build:
     jobs:
       - build:
+          context: Docker
           filters:
             branches:
               ignore: /.*/
