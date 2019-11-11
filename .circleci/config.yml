@@ -29,7 +29,7 @@ workflows:
 
   release-build:
     jobs:
-      - deploy-cloudfront:
+      - build:
           filters:
             branches:
               ignore: /.*/
